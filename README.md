@@ -27,10 +27,10 @@ Mbali Skhosana https\://www\.linkedin.com/in/mbali-skhosana/
 WanderMate is built with:
 
 - **Frontend:** React, Tailwind CSS, Framer Motion (for animations)
-- **Backend:** Node.js, Express
+- **Backend:** Node.js, 
 - **Database:** MongoDB (storing user preferences and travel locations)
 - **APIs:** Google Maps API (for location suggestions)
-
+- **Project Management and version control:** Trello Github
 
 
 ## Screenshots
