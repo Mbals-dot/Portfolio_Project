@@ -1,0 +1,404 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling for the page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+/* Header */
+.header {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-link {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+/* Main content */
+.main-content {
+  padding: 40px;
+  text-align: center;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+}
+
+.search-bar input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-bar button:hover {
+  background-color: darkgreen;
+}
+
+/* Place cards */
+.places-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.place-card {
+  background-color: white;
+  width: 200px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.place-card:hover {
+  transform: scale(1.05);
+}
+
+.place-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.place-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.place-card p {
+  font-size: 14px;
+  color: black;
+}
+
+/* Footer */
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Profile Page Styling */
+.profile-container {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.profile-container img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.profile-container h3 {
+  font-size: 24px;
+  margin-top: 10px;
+}
+
+.auth-btn {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.auth-btn:hover {
+  background-color: darkgreen;
+}
+
+/* Discover Page Styling */
+.filters {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  padding: 10px;
+  width: 250px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.category-filters select {
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+/* Place Cards */
+.places-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.place-card {
+  background-color: white;
+  width: 200px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+}
+
+.place-card:hover {
+  transform: scale(1.05);
+}
+
+.place-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.place-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.place-card p {
+  font-size: 14px;
+  color: black;
+}
+
+/* Button styling */
+button {
+  padding: 10px 20px;
+  background-color: green;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+/* Home Page Styling */
+.main-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.featured {
+  margin-top: 30px;
+}
+
+.featured-places {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.place-card {
+  background-color: white;
+  width: 200px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.2s ease-in-out;
+  margin: 0 auto;
+}
+
+.place-card:hover {
+  transform: scale(1.05);
+}
+
+.place-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.place-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.place-card p {
+  font-size: 14px;
+  color: black;
+}
+
+.cta-btn {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: green;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
+.cta-btn:hover {
+  background-color: darkgreen;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .featured-places {
+    justify-content: center;
+  }
+  .place-card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .place-card {
+    width: 100%;
+  }
+}
+
+/* General reset for margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: black;
+}
+
+header {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+.header .logo {
+  font-size: 24px;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+.nav-link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.main-content {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Profile form styling */
+#profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+button {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #444;
+}
+
+/* Sign out button */
+#sign-out-btn {
+  margin-top: 20px;
+  background-color: red;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
