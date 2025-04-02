@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Discover - WanderMate</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">WanderMate</h1>
+      <nav>
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="discover.html" class="nav-link">Discover</a>
+        <a href="profile.html" class="nav-link">Profile</a>
+      </nav>
+    </header>
+
+    <div class="main-content">
+      <h2>Discover Amazing Hangout Spots</h2>
+
+      <!-- Search bar and category filters -->
+      <div class="filters">
+        <input
+          type="text"
+          id="search-input"
+          placeholder="Search for places..."
+          class="search-bar"
+        />
+        <button onclick="searchPlaces()">Search</button>
+        <div class="category-filters">
+          <label for="category">Category: </label>
+          <select id="category" onchange="filterByCategory()">
+            <option value="">All</option>
+            <option value="beach">Beach</option>
+            <option value="mountain">Mountain</option>
+            <option value="park">Park</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- Place Cards Container -->
+      <div id="places-container" class="places-container">
+        <!-- Place cards will be added here dynamically -->
+      </div>
+    </div>
+    <div id="map" style="height: 400px; width: 100%"></div>
+
+    <footer class="footer">
+      <p>&copy; 2025 WanderMate. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7VaYQafwhjp4SklaMzH42PcRLgt7lPEo&callback=initMap"
+      async
+      defer
+    ></script>
+  </body>
+</html>
